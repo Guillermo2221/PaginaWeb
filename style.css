@@ -1,0 +1,499 @@
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 100%;
+    font-family: 'Lato';
+    color: #333;
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+nav {
+    background: #000;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #d4d4d4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 40px 0;
+}
+
+.navbar{
+    padding: 12px;
+}
+
+.titulo_logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 34px;
+    margin-right: 450px;
+}
+
+.background-image {
+    background-image: url('imagenes/fondotienda.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.centreado{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 99px;
+}
+
+.description, .discount, .categories, .video, footer {
+    padding: 90px 20px;
+    text-align: center;
+    color: #000;
+    background-color: #333;
+    border: 3px solid #161616;
+    border-radius: 30px;
+    margin: 150px;
+}
+
+.description{
+    background-image: url(imagenes/bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    opacity: 0.9;
+}
+
+.description_tienda{
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    border: 3px solid #161616;
+    border-radius: 30px;
+    margin: 150px;
+    background-image: url(imagenes/bg2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    opacity: 0.8;
+}
+
+
+.description_tienda2{
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    border: 3px solid #161616;
+    border-radius: 30px;
+    margin: 150px;
+    background-image: url(imagenes/bg3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    opacity: 0.8;
+}
+
+.description_tienda3{
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    border: 3px solid #161616;
+    border-radius: 30px;
+    margin: 150px;
+    background-image: url(imagenes/bg4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    opacity: 0.8;
+}
+
+
+.discount{
+    background-image: url(imagenes/fondotienda.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    color: #fff;
+}
+
+.categories{
+    background-image: url(imagenes/fondotienda.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+}
+
+.description h2{
+    font-size: 64px;
+    padding: 20px;
+}
+
+.description p{
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.discount h2{
+    font-size: 70px;
+}
+
+.discount button {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.discount button:hover {
+    background-color: #444;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.category img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.category h3 {
+    margin-top: 10px;
+}
+
+.tienda{
+    padding: 20px;
+    margin: 150px;
+    border: 2px solid #161616;
+    border-radius: 40px;
+    background-image: url(imagenes/bg3.jpg);
+}
+
+
+video {
+    width: 100%;
+    max-width: 600px;
+}
+
+.video h2{
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* carrito y productos */
+
+.products{
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.tienda_text{
+    text-align: center;
+    padding: 20px;
+    font-size: 44px;
+    color: #fff;
+}
+
+.product {
+    padding: 30px;
+    margin: 10px;
+    width: 210px;
+    height: 500px;
+    text-align: justify;
+    background-color: #fff;
+    border: 1px solid #161616;
+    border-radius: 30px;
+}
+
+.product p{
+    font-size: 14px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product_ajuste{
+    width: 160px;
+    height: auto;
+}
+
+.add-to-cart{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin: 12px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.add-to-cart:hover{
+    transition: 0.5s ease;
+    background-color: #161616;
+    color: #fff;
+}
+
+
+#cart-icon {
+    font-weight: 700;
+    right: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #555555;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+#cart-icon:hover{
+    background-color: #161616;
+    transition: 0.5s ease;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.cart.open {
+    right: 0;
+}
+
+#close-cart, #proceed-to-payment {
+    margin-top: 20px;
+    background-color: #161616;
+    color: #fff;
+    padding: 20px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#close-cart:hover, #proceed-to-payment:hover{
+    background-color: #555555;
+}
+
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart-item h3, .cart-item p {
+    margin: 0;
+    font-weight: 00;
+}
+
+.cart-item button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cesta{
+    padding: 120px;
+    margin: 240px;
+    border: 1px solid #161616;
+    border-radius: 40px;
+    text-align: justify;
+}
+
+.cesta_contact{
+    padding: 120px;
+    margin: 240px;
+    border: 1px solid #161616;
+    border-radius: 40px;
+    text-align: justify;
+    background-image: url(imagenes/header2.jpg);
+}
+
+.cesta h1{
+    text-align: center;
+}
+
+#payment-form{
+    background-color: #333;
+    color: #fff;
+    padding: 100px;
+    margin: 20px;
+    border: 1px solid #161616;
+    border-radius: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    margin: 12px;
+}
+
+
+
+#complete-purchase{
+    padding: 12px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#complete-purchase:hover{
+    background-color: #161616;
+    transition: 0.5s ease;
+}
+
+#submit-payment{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background-color: #d4d4d4;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#submit-payment:hover{
+    background-color: #555555;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+/* botones carrito */
+
+.decrease-quantity{
+    background-color: #161616;
+    border: none;
+    color: #fff;
+    padding: 4px;
+    transition: 0.3s ease;
+}
+
+.decrease-quantity:hover{
+    background-color: #333;
+    transition: 0.3s ease;
+}
+
+.increase-quantity{
+    background-color: #161616;
+    border: none;
+    color: #fff;
+    padding: 4px;
+    transition: 0.3s ease;
+}
+
+.increase-quantity:hover{
+    background-color: #333;
+    transition: 0.3s ease;
+}
+
+.remove-from-cart{
+    background-color: #161616;
+    border: none;
+    color: #fff;
+    padding: 4px;
+    transition: 0.3s ease;
+}

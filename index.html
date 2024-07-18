@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIENDA DE ROPA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Nav -->
+    <nav>
+        <ul class="navbar">
+            <a class="titulo_logo" href="#">TIENDA DE ROPA</a>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="misionvision.html">Misión</a></li>
+            <li><a href="misionvision.html">Visión</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><i class="fa-solid fa-cart-flatbed-suitcase"></i></li>
+			<div>
+                <button id="cart-icon">🛒 Carrito</button>
+            </div>
+        </ul>
+    </nav>
+
+	<!-- Carrito de compra -->
+	<div id="cart" class="cart">
+        <h2>Carrito Tienda Ropa</h2>
+        <div id="cart-items"></div>
+        <button id="proceed-to-payment">Ir al Carrito</button>
+        <button id="close-cart">Cerrar</button>
+    </div>
+
+
+    <!-- Imagen de fondo -->
+    <div class="background-image">
+		<div class="centreado">Tienda de Ropa</div>
+	</div>
+
+    <!-- Descripción de la tienda -->
+    <section class="description" id="mision">
+        <h2>Descripción de la Tienda</h2>
+        <p>En nuestra tienda de ropa, nos especializamos en ofrecer una cuidada selección de ropa y accesorios de las marcas más prestigiosas del mundo. Nuestra tienda es un espacio donde el estilo y la calidad se encuentran, proporcionando a nuestros clientes piezas únicas que reflejan las últimas tendencias de la moda. Con una atención al detalle y un compromiso con la excelencia, cada producto en nuestra tienda ha sido seleccionado para asegurar que se mantenga a la vanguardia de la moda.</p>
+    </section>
+
+    <!-- Tienda -->
+	
+	<div class="tienda">
+        <h2 class="tienda_text">Los mas Vendidos</h2>
+		<div class="products">
+            <div class="product">
+                <img src="imagenes/prod1.jpg" alt="Producto 1" class="product-image">
+                <h2>Camiseta Polo Ralph Lauren</h2>
+                <p>Camiseta tipo polo de algodón, con el icónico logotipo de Ralph Lauren bordado en el pecho. Disponible en varios colores.</p>
+                <h3>Precio: $90.00</h3>
+                <button class="add-to-cart" data-product-id="1" data-product-name="Camiseta Polo Ralph Lauren" data-product-description="Camiseta" data-product-price="90.00" data-product-image="imagenes/prod1.jpg">Agregar al carrito</button>
+            </div>
+			<div class="product">
+				<img src="imagenes/prod2.webp" alt="Producto 1" class="product-image">
+				<h2>Chaqueta de Cuero Harley-Davidson</h2>
+				<p>Chaqueta de cuero auténtico, estilo motociclista, con cierres metálicos y un diseño robusto. Ideal para motociclistas y amantes de la moda.</p>
+				<h3>Precio: $350.00</h3>
+				<button class="add-to-cart" data-product-id="6" data-product-name="Chaqueta de Cuero Harley-Davidson" data-product-description="Chaqueta" data-product-price="350.00" data-product-image="imagenes/prod2.webp">Agregar al carrito</button>
+			</div>
+            <div class="product">
+                <img src="imagenes/prod3.png" alt="Producto 3" class="product-image">
+                <h2>Reloj Rolex Submariner</h2>
+                <p>Reloj de lujo para hombres, con caja de acero inoxidable y bisel giratorio. Resistente al agua y altamente preciso.</p>
+                <h3>Precio: $8500.00</h3>
+                <button class="add-to-cart" data-product-id="13" data-product-name="Reloj Rolex Submariner" data-product-description="Reloj" data-product-price="8500.00" data-product-image="imagenes/prod3.png">Agregar al carrito</button>
+            </div>
+        </div>
+	</div>
+
+    <!-- Anuncio de descuento -->
+    <section class="discount" id="vision">
+        <h2>10% de descuento en cupones</h2>
+        <button>Inscribirse</button>
+    </section>
+
+    <!-- Categorías de productos -->
+    <section class="categories">
+        <h2 class="tienda_text">Nuestro Catalogo</h2>
+        <div class="category">
+            <img src="" alt="Audífonos" />
+            <h3>Ropa</h3>
+        </div>
+        <div class="category">
+            <img src="" alt="Relojes" />
+            <h3>Chaqueta</h3>
+        </div>
+        <div class="category">
+            <img src="" alt="Celulares" />
+            <h3>Relojes</h3>
+        </div>
+    </section>
+
+    <!-- Video -->
+    <section class="video">
+        <h2>Video Promocional</h2>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="misionvision.html">Misión</a></li>
+            <li><a href="misionvision.html">Visión</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

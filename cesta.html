@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="bg_cesta">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="misionvision.html">Misión</a></li>
+                <li><a href="misionvision.html">Visión</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <button id="cart-icon">🛒 Carrito</button>
+            </ul>
+        </nav>
+    
+        <div class="cesta">
+            <h1>Carrito de Cesta</h1>
+            <div id="cart-items"></div>
+            <h2>Subtotal: $<span id="total-amount"></span></h2>
+            <h2>ITBMS: $<span id="itbms-amount"></span></h2>
+            <h2>Total: $<span id="total-with-itbms"></span></h2>
+            <button id="complete-purchase">Finalizar Carrito</button>
+    
+            <div id="payment-form" style="display:none;">
+                <h2>Detalles de Facturacion</h2>
+                <form id="payment-details">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required><br>
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" required><br>
+                    <label for="payment-method">Método de Pago:</label>
+                    <label value="credit-card">Tarjeta</label><br>
+                    <label for="card-number">Número de Tarjeta:</label>
+                    <input type="text" id="card-number" required><br>
+                    <label for="exp-month">Mes de Expiración:</label>
+                    <input type="text" id="exp-month" required><br>
+                    <label for="exp-year">Año de Expiración:</label>
+                    <input type="text" id="exp-year" required><br>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" required><br>
+                    <button type="submit" id="submit-payment">Proceder con el Pago</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <script src="pago.js"></script>
+</body>
+</html>

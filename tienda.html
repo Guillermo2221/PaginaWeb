@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Nav -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="misionvision.html">Misión</a></li>
+            <li><a href="misionvision.html">Visión</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+			<button id="cart-icon">🛒 Carrito</button>
+        </ul>
+    </nav>
+
+	<!-- Carrito de compra -->
+	<div id="cart" class="cart">
+        <h2>Carrito Tienda Electronica</h2>
+        <div id="cart-items"></div>
+        <button id="proceed-to-payment">Ir al Carrito</button>
+        <button id="close-cart">Cerrar</button>
+    </div>
+
+
+    <!-- Tienda -->
+	<h2 class="description">Tienda de Productos</h2>
+	<div class="tienda">
+        <!-- Productos de Camisetas -->
+        <h2 class="description">Camisetas</h2>
+		<div class="products">
+            <div class="product">
+                <img src="imagenes/prod1.jpg" alt="Producto 1" class="product-image">
+                <h2>Camiseta Polo Ralph Lauren</h2>
+                <p>Camiseta tipo polo de algodón, con el icónico logotipo de Ralph Lauren bordado en el pecho. Disponible en varios colores.</p>
+                <p>Precio: $90.00</p>
+                <button class="add-to-cart" data-product-id="1" data-product-name="Camiseta Polo Ralph Lauren" data-product-description="Camiseta" data-product-price="90.00" data-product-image="imagenes/prod1.jpg">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/prod2.webp" alt="Producto 2" class="product-image">
+                <h2>Chaqueta de Cuero Harley-Davidson</h2>
+                <p>Chaqueta de cuero auténtico, estilo motociclista, con cierres metálicos y un diseño robusto. Ideal para motociclistas y amantes de la moda.</p>
+                <p>Precio: $350.00</p>
+                <button class="add-to-cart" data-product-id="2" data-product-name="Chaqueta de Cuero Harley-Davidson" data-product-description="Camiseta" data-product-price="350.00" data-product-image="imagenes/prod2.webp">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/prod6.jpg" alt="Producto 3" class="product-image">
+                <h2>Traje Formal Hugo Boss</h2>
+                <p>Traje de dos piezas de lana virgen, con corte entallado y acabado impecable. Ideal para eventos formales y negocios.</p>
+                <p>Precio: $900.00</p>
+                <button class="add-to-cart" data-product-id="3" data-product-name="Traje Formal Hugo Boss" data-product-description="Traje" data-product-price="900.00" data-product-image="imagenes/prod6.jpg">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/prod7.jpg" alt="Producto 3" class="product-image">
+                <h2>Sudadera con Capucha Adidas</h2>
+                <p>Sudadera con capucha de algodón y poliéster, con el logotipo de Adidas en el pecho. Cómoda y casual.</p>
+                <p>Precio: $60.00</p>
+                <button class="add-to-cart" data-product-id="4" data-product-name="Sudadera con Capucha Adidas" data-product-description="Sudadera" data-product-price="60.00" data-product-image="imagenes/prod7.jpg">Agregar al carrito</button>
+            </div>
+        </div>
+        <!-- Productos de Relojes -->
+        <h2 class="description">Relojes</h2>
+        <div class="products">
+        <div class="product">
+            <img src="imagenes/producto6.webp" alt="Producto 1" class="product-image">
+            <h2>Apple Watch Series 8</h2>
+            <p>Reloj inteligente con pantalla Retina siempre activa, monitoreo de salud avanzado, GPS, resistencia al agua, y funciones de seguimiento de actividad física.</p>
+            <p>Precio: $399.00</p>
+            <button class="add-to-cart" data-product-id="6" data-product-name="Apple Watch Series 8" data-product-description="Reloj inteligente" data-product-price="399.00" data-product-image="imagenes/producto6.webp">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="imagenes/producto7.jpg" alt="Producto 2" class="product-image">
+            <h2>Samsung Galaxy Watch 5</h2>
+            <p>Reloj inteligente con pantalla AMOLED, monitoreo de salud y fitness, GPS, resistencia al agua, y compatibilidad con dispositivos Android.</p>
+            <p>Precio: $279.00</p>
+            <button class="add-to-cart" data-product-id="7" data-product-name="PSamsung Galaxy Watch 5" data-product-description="Reloj inteligente con pantalla AMOLED" data-product-price="279.00" data-product-image="imagenes/producto7.jpg">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="imagenes/producto8.png" alt="Producto 3" class="product-image">
+            <h2>Fitbit Versa 4</h2>
+            <p>Reloj inteligente enfocado en la salud y el fitness, con monitoreo de ritmo cardíaco, GPS integrado, y hasta 6 días de duración de batería.</p>
+            <p>Precio: $229.95</p>
+            <button class="add-to-cart" data-product-id="8" data-product-name="Fitbit Versa 4" data-product-description="Reloj inteligente" data-product-price="229.95" data-product-image="imagenes/producto8.png">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="imagenes/producto9.webp" alt="Producto 3" class="product-image">
+            <h2>Garmin Venu 2</h2>
+            <p>Reloj inteligente con pantalla AMOLED, monitoreo avanzado de salud y fitness, GPS, y hasta 11 días de duración de batería.</p>
+            <p>Precio: $399.99</p>
+            <button class="add-to-cart" data-product-id="9" data-product-name="Garmin Venu 2" data-product-description="Reloj inteligente con pantalla AMOLED" data-product-price="399.99" data-product-image="imagenes/producto9.webp">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="imagenes/producto10.jpg" alt="Producto 3" class="product-image">
+            <h2>Huawei Watch GT 3</h2>
+            <p>Reloj inteligente con pantalla AMOLED, monitoreo de salud, GPS, y hasta 14 días de duración de batería. Resistente al agua y compatible con Android y iOS.</p>
+            <p>Precio: $249.00</p>
+            <button class="add-to-cart" data-product-id="10" data-product-name="Huawei Watch GT 3" data-product-description="Reloj inteligente" data-product-price="249.00" data-product-image="imagenes/producto10.jpg">Agregar al carrito</button>
+        </div>
+        </div>
+        <!-- Productos Variados -->
+        <h2 class="description">Variados</h2>
+        <div class="products">
+            <div class="product">
+                <img src="imagenes/prod5.webp" alt="Producto 1" class="product-image">
+                <h2>Zapatos Deportivos Nike Air Max</h2>
+                <p>Zapatillas deportivas con tecnología Air Max para una mayor amortiguación y comodidad. Disponibles en varios diseños y colores.</p>
+                <p>Precio: $130.00</p>
+                <button class="add-to-cart" data-product-id="11" data-product-name="Zapatos Deportivos Nike Air Max" data-product-description="Zapatos" data-product-price="130.00" data-product-image="imagenes/prod5.webp">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/prod8.jpg" alt="Producto 2" class="product-image">
+                <h2>Cartera de Cuero Fossil</h2>
+                <p>Smartphone con pantalla Dynamic AMOLED 2X, procesador Snapdragon 8 Gen 2, sistema de cámara de alta resolución, y S Pen integrado.</p>
+                <p>Precio: $50.00</p>
+                <button class="add-to-cart" data-product-id="12" data-product-name="Cartera de Cuero Fossil" data-product-description="Cartera" data-product-price="50.00" data-product-image="imagenes/prod8.jpg">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/prod10.jpg" alt="Producto 3" class="product-image">
+                <h2>Gafas de Sol Ray-Ban Aviator</h2>
+                <p>Gafas de sol estilo aviador, con lentes polarizadas y marco metálico. Protegen contra los rayos UV.</p>
+                <p>Precio: $150.00</p>
+                <button class="add-to-cart" data-product-id="13" data-product-name="Gafas de Sol Ray-Ban Aviator" data-product-description="Smartphone" data-product-price="150.00" data-product-image="imagenes/prod10.jpg">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/prod9.jpg" alt="Producto 3" class="product-image">
+                <h2>Cinturón de Cuero Gucci</h2>
+                <p>Cinturón de cuero de alta calidad, con hebilla dorada y el logotipo de Gucci. Un accesorio de lujo.</p>
+                <p>Precio: $450.00</p>
+                <button class="add-to-cart" data-product-id="14" data-product-name="Cinturón de Cuero Gucci" data-product-description="Smartphone" data-product-price="450.00" data-product-image="imagenes/prod9.jpg">Agregar al carrito</button>
+            </div>
+        </div>
+	</div>
+
+    <!-- Anuncio de descuento -->
+    <section class="discount" id="vision">
+        <h2>10% de descuento en cupones</h2>
+        <button>Inscribirse</button>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="misionvision.html">Misión</a></li>
+            <li><a href="misionvision.html">Visión</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>
